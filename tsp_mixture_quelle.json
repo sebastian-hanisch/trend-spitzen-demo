@@ -1,0 +1,24 @@
+{
+ "beschreibung": "Begleitblatt zu tsp_mixture.json: Quelle und Stand je Feld (die Datei selbst bleibt eine unveränderte Kopie, der SHA-256 steht im Kopier-Test)",
+ "sha256": "669f821c78e0bf38c47fa846232f27cd2ff126f4fceadca5369a5c9af5551c9f",
+ "quelle": "gemeinsame Gewichtstabelle der Linie Extremwert (Vehikel B), Eigentümer: Stück 4 (GPD an Überschreitungen); in dieser Demo (Stück 8) nur für die Wochenstruktur-Tabelle gebraucht; Erzeuger ev_v13_vehikel_b_tabelle.py / ev_v13_vehikel_b_exakt.py der Vormessung",
+ "stand": "2026-11-20",
+ "felder": {
+  "beschreibung": {
+   "quelle": "Erzeuger der Tabelle (Text)",
+   "stand": "2026-11-20"
+  },
+  "n_komponenten": {
+   "quelle": "Zahl der Komponenten nach Zusammenfassen gleicher (μ, s): 1 224 (eigene Aufzählung im Test: 4 704 Schritte, 2 376 mit Gewicht)",
+   "stand": "2026-11-20"
+  },
+  "summe_gewichte": {
+   "quelle": "Summe der Gewichte, Kontrolle auf 1",
+   "stand": "2026-11-20"
+  },
+  "komponenten": {
+   "quelle": "je Komponente (Gewicht, μ, s) der logarithmierten Verweilzeit; Definition: Art × Kunde (zwölf Effekte als Zahlen) × Zoll × Wochenende × Vorlauf (Gauß-Legendre, 48 Knoten); das Verweilzeit-Modell stammt aus der verweilzeit-demo und ist dort ausgedacht",
+   "stand": "2026-11-20"
+  }
+ }
+}

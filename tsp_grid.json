@@ -1,0 +1,1014 @@
+{
+ "_meta": {
+  "beschreibung": "Eingefrorene Rechnungen der Demo trend-spitzen-demo; Erzeuger tools/tsp_make_grid.py; Zufall: SplitMix64 (tsp_vecrng, bitgleich zur Vorlage), Umrechnung numpy.log",
+  "stand": "2026-11-20",
+  "zufalls_seed_basis": 20261121,
+  "numpy": "2.5.3",
+  "python": "3.14.6"
+ },
+ "typ1": {
+  "quelle": "Fehlerquote des Likelihood-Quotienten-Tests (Gumbel mit gegen ohne Lage-Trend, ξ = 0 bekannt) bei β = 0; je m 4 000 Läufe; Schwelle χ²₁ 95 % = 3,8415",
+  "stand": "2026-11-20",
+  "daten": [
+   {
+    "m": 100,
+    "R": 4000,
+    "hits": 236,
+    "ausgefallen": 0
+   },
+   {
+    "m": 10,
+    "R": 4000,
+    "hits": 403,
+    "ausgefallen": 0
+   },
+   {
+    "m": 20,
+    "R": 4000,
+    "hits": 256,
+    "ausgefallen": 0
+   },
+   {
+    "m": 30,
+    "R": 4000,
+    "hits": 255,
+    "ausgefallen": 0
+   },
+   {
+    "m": 50,
+    "R": 4000,
+    "hits": 232,
+    "ausgefallen": 0
+   }
+  ]
+ },
+ "power": {
+  "quelle": "Trennschärfe desselben Tests, je Zelle 4 000 Läufe; `formel` = Φ(√λ − 1,96) + Φ(−√λ − 1,96), λ = β² m (m² − 1)/12",
+  "stand": "2026-11-20",
+  "daten": [
+   {
+    "beta": 0.01,
+    "m": 100,
+    "R": 4000,
+    "hits": 3214,
+    "ausgefallen": 0,
+    "formel": 0.8229446726948189
+   },
+   {
+    "beta": 0.01,
+    "m": 20,
+    "R": 4000,
+    "hits": 314,
+    "ausgefallen": 0,
+    "formel": 0.0576523067430465
+   },
+   {
+    "beta": 0.01,
+    "m": 50,
+    "R": 4000,
+    "hits": 786,
+    "ausgefallen": 0,
+    "formel": 0.1751643355684674
+   },
+   {
+    "beta": 0.02,
+    "m": 100,
+    "R": 4000,
+    "hits": 4000,
+    "ausgefallen": 0,
+    "formel": 0.9999314243804872
+   },
+   {
+    "beta": 0.02,
+    "m": 20,
+    "R": 4000,
+    "hits": 397,
+    "ausgefallen": 0,
+    "formel": 0.08098812793110166
+   },
+   {
+    "beta": 0.02,
+    "m": 50,
+    "R": 4000,
+    "hits": 2129,
+    "ausgefallen": 0,
+    "formel": 0.5322585689646999
+   },
+   {
+    "beta": 0.04,
+    "m": 100,
+    "R": 4000,
+    "hits": 4000,
+    "ausgefallen": 0,
+    "formel": 1.0
+   },
+   {
+    "beta": 0.04,
+    "m": 20,
+    "R": 4000,
+    "hits": 786,
+    "ausgefallen": 0,
+    "formel": 0.17797264403053725
+   },
+   {
+    "beta": 0.04,
+    "m": 50,
+    "R": 4000,
+    "hits": 3908,
+    "ausgefallen": 0,
+    "formel": 0.9830686298371164
+   }
+  ]
+ },
+ "years80": {
+  "quelle": "kleinstes m mit Formel-Trennschärfe ≥ 0,8, dort 2 000 Läufe Simulation",
+  "stand": "2026-11-20",
+  "daten": [
+   {
+    "beta": 0.005,
+    "m": 156,
+    "R": 2000,
+    "hits": 1611,
+    "ausgefallen": 0,
+    "formel": 0.8029793908437844
+   },
+   {
+    "beta": 0.01,
+    "m": 99,
+    "R": 2000,
+    "hits": 1606,
+    "ausgefallen": 0,
+    "formel": 0.8115040404160929
+   },
+   {
+    "beta": 0.02,
+    "m": 62,
+    "R": 2000,
+    "hits": 1597,
+    "ausgefallen": 0,
+    "formel": 0.8046172988293736
+   },
+   {
+    "beta": 0.04,
+    "m": 39,
+    "R": 2000,
+    "hits": 1532,
+    "ausgefallen": 0,
+    "formel": 0.8027388020188755
+   }
+  ]
+ },
+ "blocks": {
+  "quelle": "400 000 Blöcke zu m Jahren, Jahr für Jahr gezogen (Lage β·t); Zählung der Blöcke über dem Design Life Level (q = 5 %) und über dem heutigen 100-Jahres-Pegel; exakte Werte daneben",
+  "stand": "2026-11-20",
+  "daten": [
+   {
+    "beta": 0.01,
+    "m": 50,
+    "blocks": 400000,
+    "ueber_dll": 19843,
+    "ueber_heute": 190796,
+    "dll": 7.137609138799872,
+    "risiko_exakt": 0.47729193531009795
+   },
+   {
+    "beta": 0.02,
+    "m": 50,
+    "blocks": 400000,
+    "ueber_dll": 19810,
+    "ueber_heute": 230013,
+    "dll": 7.413526442472117,
+    "risiko_exakt": 0.5746570952237078
+   },
+   {
+    "beta": 0.04,
+    "m": 50,
+    "blocks": 400000,
+    "ueber_dll": 19942,
+    "ueber_heute": 316721,
+    "dll": 8.023590950263706,
+    "risiko_exakt": 0.7926634466825647
+   },
+   {
+    "beta": 0.0,
+    "m": 50,
+    "blocks": 400000,
+    "ueber_dll": 20059,
+    "ueber_heute": 157814,
+    "dll": 6.8822182544703105,
+    "risiko_exakt": 0.3949939328624633
+   }
+  ]
+ },
+ "rmse": {
+  "quelle": "je Zelle 400 Läufe; Fehler = Pegel-Dach minus wahrer Pegel des letzten Jahres in σ; a stationäre GEV, b Gumbel mit Lage-Trend (ξ = 0 bekannt), c GEV mit Lage-Trend; gepaarter Bootstrap-Standardfehler (2 000 Wiederholungen)",
+  "stand": "2026-11-20",
+  "daten": [
+   {
+    "m": 100,
+    "beta": 0.01,
+    "R": 400,
+    "ausgefallen": 0,
+    "a": {
+     "bias": -0.5466943606160498,
+     "sd": 0.7578347974567606,
+     "rmse": 0.9336768821252511,
+     "med_abs": 0.6960202343851276,
+     "xi_mittel": -0.034154943528998574,
+     "am_rand": 0,
+     "anteil_unter_wahr": 0.78
+    },
+    "b": {
+     "bias": -0.03587988012095459,
+     "sd": 0.4640909958430077,
+     "rmse": 0.4648971575402374,
+     "med_abs": 0.29577285478133053,
+     "besser_als_a": 0.7375
+    },
+    "c": {
+     "bias": -0.028757867074953473,
+     "sd": 0.8134398792248022,
+     "rmse": 0.8129312645846377,
+     "med_abs": 0.5570272203774733,
+     "besser_als_a": 0.64,
+     "xi_mittel": -0.00640984878220406,
+     "am_rand": 0
+    },
+    "diff_c_a": {
+     "diff": -0.12074561754061341,
+     "se": 0.024329472729058405,
+     "z": 4.962936060525406,
+     "urteil": "c besser"
+    },
+    "abdeckung": {
+     "letztes": 0.7625,
+     "mittleres": 0.8675,
+     "kein_intervall": 0
+    }
+   },
+   {
+    "m": 100,
+    "beta": 0.02,
+    "R": 400,
+    "ausgefallen": 0,
+    "a": {
+     "bias": -0.944431994363424,
+     "sd": 0.7091987820873161,
+     "rmse": 1.1805326328442267,
+     "med_abs": 0.9803810704628009,
+     "xi_mittel": -0.07470879756922667,
+     "am_rand": 0,
+     "anteil_unter_wahr": 0.9
+    },
+    "b": {
+     "bias": -0.04817948257950188,
+     "sd": 0.4281207792340357,
+     "rmse": 0.43029111732588277,
+     "med_abs": 0.29777366162911356,
+     "besser_als_a": 0.85
+    },
+    "c": {
+     "bias": 0.049076597840778995,
+     "sd": 0.8002634290334986,
+     "rmse": 0.8007677655940315,
+     "med_abs": 0.5334121432792869,
+     "besser_als_a": 0.7475,
+     "xi_mittel": 0.004632539266962234,
+     "am_rand": 0
+    },
+    "diff_c_a": {
+     "diff": -0.3797648672501952,
+     "se": 0.040867874312923956,
+     "z": 9.292503552848094,
+     "urteil": "c besser"
+    },
+    "abdeckung": {
+     "letztes": 0.59,
+     "mittleres": 0.8975,
+     "kein_intervall": 0
+    }
+   },
+   {
+    "m": 100,
+    "beta": 0.04,
+    "R": 400,
+    "ausgefallen": 0,
+    "a": {
+     "bias": -1.593185175681698,
+     "sd": 0.7346208839173086,
+     "rmse": 1.754011880658638,
+     "med_abs": 1.6112112884391077,
+     "xi_mittel": -0.1654106696281008,
+     "am_rand": 0,
+     "anteil_unter_wahr": 0.975
+    },
+    "b": {
+     "bias": -0.11338662297185012,
+     "sd": 0.4284549027007784,
+     "rmse": 0.4426863403225506,
+     "med_abs": 0.31513006260259413,
+     "besser_als_a": 0.95
+    },
+    "c": {
+     "bias": -0.09039603298081923,
+     "sd": 0.7839108828452706,
+     "rmse": 0.7881316034402585,
+     "med_abs": 0.5427915440217719,
+     "besser_als_a": 0.895,
+     "xi_mittel": -0.004314487375163392,
+     "am_rand": 0
+    },
+    "diff_c_a": {
+     "diff": -0.9658802772183795,
+     "se": 0.03677561239674093,
+     "z": 26.264152090747405,
+     "urteil": "c besser"
+    },
+    "abdeckung": {
+     "letztes": 0.3225,
+     "mittleres": 0.91,
+     "kein_intervall": 0
+    }
+   },
+   {
+    "m": 100,
+    "beta": 0.0,
+    "R": 400,
+    "ausgefallen": 0,
+    "a": {
+     "bias": 0.038883031139892804,
+     "sd": 0.7175568416357417,
+     "rmse": 0.717713377008149,
+     "med_abs": 0.4645638520507367,
+     "xi_mittel": 0.002462717084145486,
+     "am_rand": 0,
+     "anteil_unter_wahr": 0.52
+    },
+    "b": {
+     "bias": -0.06273473501408895,
+     "sd": 0.4512281621794257,
+     "rmse": 0.4550093231849766,
+     "med_abs": 0.3079030953556683,
+     "besser_als_a": 0.6525
+    },
+    "c": {
+     "bias": 0.040220017189134455,
+     "sd": 0.7486019566311016,
+     "rmse": 0.748746637408762,
+     "med_abs": 0.5252551131916081,
+     "besser_als_a": 0.43,
+     "xi_mittel": 0.00666039527636474,
+     "am_rand": 0
+    },
+    "diff_c_a": {
+     "diff": 0.03103326040061305,
+     "se": 0.008559461948848,
+     "z": 3.625608780793722,
+     "urteil": "c schlechter"
+    },
+    "abdeckung": {
+     "letztes": 0.935,
+     "mittleres": 0.935,
+     "kein_intervall": 0
+    }
+   },
+   {
+    "m": 20,
+    "beta": 0.01,
+    "R": 400,
+    "ausgefallen": 0,
+    "a": {
+     "bias": 0.216730437492639,
+     "sd": 2.7216316891948136,
+     "rmse": 2.726854036529292,
+     "med_abs": 1.4893868750772659,
+     "xi_mittel": -0.022386975956194658,
+     "am_rand": 0,
+     "anteil_unter_wahr": 0.5975
+    },
+    "b": {
+     "bias": -0.29214856488239693,
+     "sd": 0.9829571610821005,
+     "rmse": 1.024275379248237,
+     "med_abs": 0.6827774073013435,
+     "besser_als_a": 0.74
+    },
+    "c": {
+     "bias": 0.791112499766173,
+     "sd": 4.0332098025579635,
+     "rmse": 4.1051155093928005,
+     "med_abs": 1.6222332549870444,
+     "besser_als_a": 0.4525,
+     "xi_mittel": -0.010296611352839592,
+     "am_rand": 14
+    },
+    "diff_c_a": {
+     "diff": 1.3782614728635085,
+     "se": 0.47418427949549247,
+     "z": 2.9065946140810643,
+     "urteil": "c schlechter"
+    },
+    "abdeckung": {
+     "letztes": 0.7625,
+     "mittleres": 0.785,
+     "kein_intervall": 0
+    }
+   },
+   {
+    "m": 20,
+    "beta": 0.02,
+    "R": 400,
+    "ausgefallen": 0,
+    "a": {
+     "bias": 0.17021181026293505,
+     "sd": 6.629876129142031,
+     "rmse": 6.623770935381212,
+     "med_abs": 1.4148701855371553,
+     "xi_mittel": -0.04490260161288566,
+     "am_rand": 2,
+     "anteil_unter_wahr": 0.6275
+    },
+    "b": {
+     "bias": -0.29180711122242164,
+     "sd": 0.9752457211992194,
+     "rmse": 1.0167978394624797,
+     "med_abs": 0.6192404805525946,
+     "besser_als_a": 0.7925
+    },
+    "c": {
+     "bias": 1.245894068949869,
+     "sd": 11.688470737014706,
+     "rmse": 11.740146904134908,
+     "med_abs": 1.5650506221746228,
+     "besser_als_a": 0.44,
+     "xi_mittel": -0.01753100536091459,
+     "am_rand": 12
+    },
+    "diff_c_a": {
+     "diff": 5.1163759687536965,
+     "se": 1.729361309720673,
+     "z": 2.958535003642527,
+     "urteil": "c schlechter"
+    },
+    "abdeckung": {
+     "letztes": 0.7625,
+     "mittleres": 0.785,
+     "kein_intervall": 0
+    }
+   },
+   {
+    "m": 20,
+    "beta": 0.04,
+    "R": 400,
+    "ausgefallen": 0,
+    "a": {
+     "bias": -0.2483374326168646,
+     "sd": 2.4623212067345728,
+     "rmse": 2.471748296502033,
+     "med_abs": 1.4159607214604035,
+     "xi_mittel": -0.05238950065345653,
+     "am_rand": 1,
+     "anteil_unter_wahr": 0.66
+    },
+    "b": {
+     "bias": -0.25338616209982545,
+     "sd": 0.9640510168486721,
+     "rmse": 0.9956281556499497,
+     "med_abs": 0.6846761506443229,
+     "besser_als_a": 0.74
+    },
+    "c": {
+     "bias": 1.289604341797391,
+     "sd": 8.012163020298303,
+     "rmse": 8.105390103601351,
+     "med_abs": 1.434642196034544,
+     "besser_als_a": 0.485,
+     "xi_mittel": -0.004000107286661811,
+     "am_rand": 12
+    },
+    "diff_c_a": {
+     "diff": 5.633641807099318,
+     "se": 2.472703971984056,
+     "z": 2.2783324938726808,
+     "urteil": "c schlechter"
+    },
+    "abdeckung": {
+     "letztes": 0.775,
+     "mittleres": 0.795,
+     "kein_intervall": 0
+    }
+   },
+   {
+    "m": 20,
+    "beta": 0.0,
+    "R": 400,
+    "ausgefallen": 0,
+    "a": {
+     "bias": 0.08213255401022972,
+     "sd": 2.223431640315894,
+     "rmse": 2.2221689618339497,
+     "med_abs": 1.1604341311823776,
+     "xi_mittel": -0.031817192651550454,
+     "am_rand": 0,
+     "anteil_unter_wahr": 0.56
+    },
+    "b": {
+     "bias": -0.2849141824287188,
+     "sd": 1.0018989044298772,
+     "rmse": 1.0404172252082664,
+     "med_abs": 0.7392286242739337,
+     "besser_als_a": 0.6775
+    },
+    "c": {
+     "bias": 0.9165855323927928,
+     "sd": 6.627858494167172,
+     "rmse": 6.682725191592795,
+     "med_abs": 1.4649470643755935,
+     "besser_als_a": 0.3525,
+     "xi_mittel": -0.009306695278516887,
+     "am_rand": 9
+    },
+    "diff_c_a": {
+     "diff": 4.460556229758845,
+     "se": 1.9604210050138908,
+     "z": 2.275305262670984,
+     "urteil": "c schlechter"
+    },
+    "abdeckung": {
+     "letztes": 0.8175,
+     "mittleres": 0.8175,
+     "kein_intervall": 0
+    }
+   },
+   {
+    "m": 50,
+    "beta": 0.01,
+    "R": 400,
+    "ausgefallen": 0,
+    "a": {
+     "bias": -0.3365243876354414,
+     "sd": 1.146022416264649,
+     "rmse": 1.1930350470996318,
+     "med_abs": 0.8917303211870204,
+     "xi_mittel": -0.022733659206446523,
+     "am_rand": 0,
+     "anteil_unter_wahr": 0.67
+    },
+    "b": {
+     "bias": -0.1354713686425853,
+     "sd": 0.6353273683622258,
+     "rmse": 0.6488329943440696,
+     "med_abs": 0.4531122623287227,
+     "besser_als_a": 0.7125
+    },
+    "c": {
+     "bias": -0.02861443607407829,
+     "sd": 1.2831999003359194,
+     "rmse": 1.2819142971405677,
+     "med_abs": 0.8405200492388372,
+     "besser_als_a": 0.555,
+     "xi_mittel": -0.005871439948967648,
+     "am_rand": 0
+    },
+    "diff_c_a": {
+     "diff": 0.08887925004093589,
+     "se": 0.03712940980093281,
+     "z": 2.393769535186712,
+     "urteil": "c schlechter"
+    },
+    "abdeckung": {
+     "letztes": 0.825,
+     "mittleres": 0.8725,
+     "kein_intervall": 0
+    }
+   },
+   {
+    "m": 50,
+    "beta": 0.02,
+    "R": 400,
+    "ausgefallen": 0,
+    "a": {
+     "bias": -0.5113975695666464,
+     "sd": 1.1318343763001075,
+     "rmse": 1.2407150788536785,
+     "med_abs": 0.9585395656000419,
+     "xi_mittel": -0.03197827974083913,
+     "am_rand": 0,
+     "anteil_unter_wahr": 0.71
+    },
+    "b": {
+     "bias": -0.11163843711804308,
+     "sd": 0.607299814769195,
+     "rmse": 0.6167286056267466,
+     "med_abs": 0.4337402096470311,
+     "besser_als_a": 0.7475
+    },
+    "c": {
+     "bias": 0.05988505545719287,
+     "sd": 1.2498042809165661,
+     "rmse": 1.249676731644225,
+     "med_abs": 0.8619829228491578,
+     "besser_als_a": 0.6225,
+     "xi_mittel": 0.002989141419544671,
+     "am_rand": 0
+    },
+    "diff_c_a": {
+     "diff": 0.008961652790546504,
+     "se": 0.03672262313154286,
+     "z": 0.24403629224538975,
+     "urteil": "Rauschen"
+    },
+    "abdeckung": {
+     "letztes": 0.76,
+     "mittleres": 0.845,
+     "kein_intervall": 0
+    }
+   },
+   {
+    "m": 50,
+    "beta": 0.04,
+    "R": 400,
+    "ausgefallen": 0,
+    "a": {
+     "bias": -0.9034723865966066,
+     "sd": 1.0509106342278445,
+     "rmse": 1.3848878949477843,
+     "med_abs": 1.0842564519224749,
+     "xi_mittel": -0.08150764372302863,
+     "am_rand": 0,
+     "anteil_unter_wahr": 0.82
+    },
+    "b": {
+     "bias": -0.040010536217644395,
+     "sd": 0.598403960730305,
+     "rmse": 0.5989932595410365,
+     "med_abs": 0.34532859963031903,
+     "besser_als_a": 0.785
+    },
+    "c": {
+     "bias": 0.1499540905869107,
+     "sd": 1.1437048946489885,
+     "rmse": 1.1520750683495808,
+     "med_abs": 0.7170569142572845,
+     "besser_als_a": 0.6675,
+     "xi_mittel": 0.008096403318496448,
+     "am_rand": 0
+    },
+    "diff_c_a": {
+     "diff": -0.23281282659820346,
+     "se": 0.05521286261162971,
+     "z": 4.216641115600573,
+     "urteil": "c besser"
+    },
+    "abdeckung": {
+     "letztes": 0.685,
+     "mittleres": 0.885,
+     "kein_intervall": 0
+    }
+   },
+   {
+    "m": 50,
+    "beta": 0.0,
+    "R": 400,
+    "ausgefallen": 0,
+    "a": {
+     "bias": -0.04640592400294805,
+     "sd": 1.127177970475481,
+     "rmse": 1.1267241727525767,
+     "med_abs": 0.6596578074705506,
+     "xi_mittel": -0.013596148897985718,
+     "am_rand": 0,
+     "anteil_unter_wahr": 0.5775
+    },
+    "b": {
+     "bias": -0.11952244495475206,
+     "sd": 0.6289533965666153,
+     "rmse": 0.6394364972090756,
+     "med_abs": 0.4190410532750981,
+     "besser_als_a": 0.6575
+    },
+    "c": {
+     "bias": -0.011002136743567087,
+     "sd": 1.2472061989676897,
+     "rmse": 1.2456948027103183,
+     "med_abs": 0.758649469552287,
+     "besser_als_a": 0.415,
+     "xi_mittel": -0.00438836336254948,
+     "am_rand": 0
+    },
+    "diff_c_a": {
+     "diff": 0.11897062995774155,
+     "se": 0.02650614798185351,
+     "z": 4.488416424717411,
+     "urteil": "c schlechter"
+    },
+    "abdeckung": {
+     "letztes": 0.8725,
+     "mittleres": 0.8725,
+     "kein_intervall": 0
+    }
+   }
+  ]
+ },
+ "bias": {
+  "quelle": "stationäre GEV, 3 000 Läufe, m = 50, β = 0,02",
+  "stand": "2026-11-20",
+  "daten": {
+   "bias": -0.5437379048404587,
+   "sd": 1.1258045130451522,
+   "rmse": 1.250065691134907,
+   "med_abs": 0.927105443145154,
+   "m": 50,
+   "beta": 0.02,
+   "R": 3000,
+   "se_bias": 0.020554284237864963,
+   "anteil_unter_wahr": 0.7213333333333334,
+   "xi_mittel": -0.03556470273810953,
+   "am_rand": 0,
+   "ausgefallen": 0
+  }
+ },
+ "coverage": {
+  "quelle": "Anteil der Läufe, in denen das 95-%-Delta-Intervall (numerische Hesse-Matrix) der stationären GEV den wahren Pegel deckt; kein Intervall zählt als nicht gedeckt",
+  "stand": "2026-11-20",
+  "daten": [
+   {
+    "m": 100,
+    "beta": 0.02,
+    "R": 1000,
+    "letztes": 0.538,
+    "mittleres": 0.882,
+    "kein_intervall": 0,
+    "ausgefallen": 0,
+    "se_punkte": 1.5811388300841895
+   },
+   {
+    "m": 100,
+    "beta": 0.04,
+    "R": 1000,
+    "letztes": 0.334,
+    "mittleres": 0.904,
+    "kein_intervall": 0,
+    "ausgefallen": 0,
+    "se_punkte": 1.5811388300841895
+   },
+   {
+    "m": 30,
+    "beta": 0.0,
+    "R": 1000,
+    "letztes": 0.835,
+    "mittleres": 0.835,
+    "kein_intervall": 0,
+    "ausgefallen": 0,
+    "se_punkte": 1.5811388300841895
+   },
+   {
+    "m": 50,
+    "beta": 0.02,
+    "R": 1000,
+    "letztes": 0.752,
+    "mittleres": 0.844,
+    "kein_intervall": 0,
+    "ausgefallen": 0,
+    "se_punkte": 1.5811388300841895
+   }
+  ]
+ },
+ "vehicle_c1": {
+  "quelle": "Vehikel A (M/M/1, Tag = 256 Kunden, stationärer Start), 400 000 Tage je Last; Gumbel-ML der Tagesmaxima gegen die Gumbel-Näherung der Rechnung",
+  "stand": "2026-11-20",
+  "daten": [
+   {
+    "rho": 0.75,
+    "tage": 400000,
+    "sigma_dach": 3.483990741831541,
+    "mu_dach": 11.17576663597921,
+    "sigma_rechnung": 4.0,
+    "mu_rechnung": 9.939626599152001,
+    "pegel_simulation": 28.707066286399154,
+    "pegel_simulation_se": 0.06489607968117463,
+    "pegel_rechnung": 28.34022350625832,
+    "ks_rechnung": 0.12177517168555055
+   },
+   {
+    "rho": 0.7,
+    "tage": 400000,
+    "sigma_dach": 2.99571825680697,
+    "mu_dach": 10.062936864178106,
+    "sigma_rechnung": 3.333333333333333,
+    "mu_rechnung": 9.268522972963193,
+    "pegel_simulation": 24.765068425342477,
+    "pegel_simulation_se": 0.0554684432008091,
+    "pegel_rechnung": 24.602353728885127,
+    "ks_rechnung": 0.09189403717042421
+   },
+   {
+    "rho": 0.85,
+    "tage": 400000,
+    "sigma_dach": 5.298891987312569,
+    "mu_dach": 14.694844724110729,
+    "sigma_rechnung": 6.666666666666666,
+    "mu_rechnung": 10.589456968066832,
+    "pegel_simulation": 42.8972327158008,
+    "pegel_simulation_se": 0.08845721619446253,
+    "pegel_rechnung": 41.257118479910694,
+    "ks_rechnung": 0.25134598087890003
+   },
+   {
+    "rho": 0.8,
+    "tage": 400000,
+    "sigma_dach": 4.206747604374161,
+    "mu_dach": 12.65458564608628,
+    "sigma_rechnung": 5.000000000000001,
+    "mu_rechnung": 10.51579034148576,
+    "pegel_simulation": 34.33658751247351,
+    "pegel_simulation_se": 0.09286816516199245,
+    "pegel_rechnung": 33.51653647536866,
+    "ks_rechnung": 0.17092369733914833
+   },
+   {
+    "rho": 0.9,
+    "tage": 400000,
+    "sigma_dach": 7.380186889222162,
+    "mu_dach": 17.993701845147154,
+    "sigma_rechnung": 10.000000000000002,
+    "mu_rechnung": 8.346467428336446,
+    "pegel_simulation": 59.46479685185493,
+    "pegel_simulation_se": 0.14299800105349111,
+    "pegel_rechnung": 54.34795969610225,
+    "ks_rechnung": 0.3987248389063014
+   }
+  ]
+ },
+ "vehicle_c2": {
+  "quelle": "Vehikel A bei wachsender Last (linear von ρ = 0,70 auf ρ_bis über 100 Tage), 300 Läufe; wahr = 0,99-Quantil des Tagesmaximums bei ρ_bis aus 400 000 Tagen; Modelle: stationäre GEV, GEV mit Lage-Trend, Gumbel mit Trend in Lage und ln σ",
+  "stand": "2026-11-20",
+  "daten": [
+   {
+    "rho_von": 0.7,
+    "rho_bis": 0.85,
+    "tage_je_lauf": 100,
+    "R": 300,
+    "wahr": 42.93198050164004,
+    "wahr_se": 0.12397219346589382,
+    "wahr_tage": 400000,
+    "naeherung": 41.257118479910694,
+    "stationaer": {
+     "median": 0.7985200424203344,
+     "q10": 0.6984416080938174,
+     "q90": 0.9350789872328359,
+     "anteil_unter_1": 0.9633333333333334,
+     "sd_ln": 0.11703596385778454,
+     "rmse_ln": 0.2459215929324288,
+     "n": 300
+    },
+    "lage_trend": {
+     "median": 0.8139087122249832,
+     "q10": 0.7137041464763297,
+     "q90": 0.9518358202001982,
+     "anteil_unter_1": 0.9633333333333334,
+     "sd_ln": 0.10947819777409895,
+     "rmse_ln": 0.23023046292261473,
+     "n": 300
+    },
+    "lage_skala_trend": {
+     "median": 0.8759562158003831,
+     "q10": 0.7642815568336739,
+     "q90": 1.003363770297952,
+     "anteil_unter_1": 0.89,
+     "sd_ln": 0.11063883987530405,
+     "rmse_ln": 0.17477847918446518,
+     "n": 300
+    },
+    "kontrolle_ohne_trend": {
+     "median": 1.058025788808931,
+     "q10": 0.9058795540119192,
+     "q90": 1.226172610287114,
+     "anteil_unter_1": 0.35333333333333333,
+     "sd_ln": 0.12117408579948741,
+     "rmse_ln": 0.13087208267714873,
+     "n": 300
+    },
+    "xi_mittel": {
+     "stationaer": 0.10587025855491279,
+     "lage_trend": 0.09474028891370456,
+     "kontrolle": 0.11788414688596077
+    }
+   },
+   {
+    "rho_von": 0.7,
+    "rho_bis": 0.8,
+    "tage_je_lauf": 100,
+    "R": 300,
+    "wahr": 34.15831967361136,
+    "wahr_se": 0.047904688765572544,
+    "wahr_tage": 400000,
+    "naeherung": 33.51653647536866,
+    "stationaer": {
+     "median": 0.8736762654623971,
+     "q10": 0.7663830438655265,
+     "q90": 0.9944535904295826,
+     "anteil_unter_1": 0.9133333333333333,
+     "sd_ln": 0.10497548981754305,
+     "rmse_ln": 0.17017269874541732,
+     "n": 300
+    },
+    "lage_trend": {
+     "median": 0.8934961513772308,
+     "q10": 0.7850910759975935,
+     "q90": 1.0179716142788615,
+     "anteil_unter_1": 0.8766666666666667,
+     "sd_ln": 0.100940681239277,
+     "rmse_ln": 0.15069361884342172,
+     "n": 300
+    },
+    "lage_skala_trend": {
+     "median": 0.9329310478005735,
+     "q10": 0.7994413922233767,
+     "q90": 1.0636625193940823,
+     "anteil_unter_1": 0.77,
+     "sd_ln": 0.10824142358248207,
+     "rmse_ln": 0.13469841067375624,
+     "n": 300
+    },
+    "kontrolle_ohne_trend": {
+     "median": 1.0203490030515625,
+     "q10": 0.8902472276513814,
+     "q90": 1.1933834962290617,
+     "anteil_unter_1": 0.4166666666666667,
+     "sd_ln": 0.11717490067516616,
+     "rmse_ln": 0.11986608422404724,
+     "n": 300
+    },
+    "xi_mittel": {
+     "stationaer": 0.06613410315271638,
+     "lage_trend": 0.06482193922793156,
+     "kontrolle": 0.0875729214975608
+    }
+   },
+   {
+    "rho_von": 0.7,
+    "rho_bis": 0.9,
+    "tage_je_lauf": 100,
+    "R": 300,
+    "wahr": 59.58018433463308,
+    "wahr_se": 0.14280565507624066,
+    "wahr_tage": 400000,
+    "naeherung": 54.34795969610225,
+    "stationaer": {
+     "median": 0.719008787184632,
+     "q10": 0.6008935621110696,
+     "q90": 0.8516846122071269,
+     "anteil_unter_1": 0.99,
+     "sd_ln": 0.1374948295627047,
+     "rmse_ln": 0.35714290811664007,
+     "n": 300
+    },
+    "lage_trend": {
+     "median": 0.7143310461341745,
+     "q10": 0.6073847808417321,
+     "q90": 0.8352223801612195,
+     "anteil_unter_1": 0.9933333333333333,
+     "sd_ln": 0.12749073087465007,
+     "rmse_ln": 0.3611217058799779,
+     "n": 300
+    },
+    "lage_skala_trend": {
+     "median": 0.7752703631938991,
+     "q10": 0.6606535414079476,
+     "q90": 0.9105803055761661,
+     "anteil_unter_1": 0.9833333333333333,
+     "sd_ln": 0.1194107555768302,
+     "rmse_ln": 0.2775234181781317,
+     "n": 300
+    },
+    "kontrolle_ohne_trend": {
+     "median": 1.0737278615315387,
+     "q10": 0.8881141939298178,
+     "q90": 1.3160193596059389,
+     "anteil_unter_1": 0.3233333333333333,
+     "sd_ln": 0.1556903611219482,
+     "rmse_ln": 0.17159991093356583,
+     "n": 300
+    },
+    "xi_mittel": {
+     "stationaer": 0.16693489651007667,
+     "lage_trend": 0.14319999805728162,
+     "kontrolle": 0.16233186172704356
+    }
+   }
+  ]
+ },
+ "weekly": {
+  "quelle": "Vehikel B: Pegel je Container zu p = 1e-5 nur Werktage und nur Wochenende (exakt aus der Definition der Linie, ohne Zufall)",
+  "stand": "2026-11-20",
+  "daten": {
+   "p": 1e-05,
+   "werktage": 253.36144377337106,
+   "wochenende": 342.00217637765746,
+   "faktor": 1.349858807576004,
+   "summe_gewichte_werktage": 1.0000000000000004,
+   "summe_gewichte_wochenende": 1.0000000000000004
+  }
+ }
+}
