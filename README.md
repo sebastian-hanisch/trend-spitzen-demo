@@ -1,7 +1,6 @@
 # Trend: der Pegel von heute, nicht der Pegel der Reihe – Streamlit-Demo
 
-<!-- TODO nach dem Deploy: direkt hierher den Live-Link setzen (Leerzeile davor und danach):
-**[→ Demo live ausprobieren](https://sebastianhanisch-trend-spitzen-demo.streamlit.app/)** -->
+**[→ Demo live ausprobieren](https://sebastianhanisch-trend-spitzen-demo.streamlit.app/)**
 
 Demo der Linie **„Extremwerte erklärt“** („wie groß wird das Größte, und wie sicher weiß man das?“) in der „Konzepte“-Reihe der Website „Sebastian Hanisch – Operations Research und Machine Learning“ (Bereich Statistik, Feld „Seltenes und Extremes“). Die Kante zur Demo davor („Spitzen-Cluster“, Abhängigkeit) ist `fix`: Bis dahin bleibt eine Annahme stehen, nämlich dass die Verteilung der Jahresmaxima sich **nicht mit der Zeit ändert** (Stationarität); in der Definition des Wiederkehrwerts (Demo „Wiederkehrwert“) steckt sie, und „Spitzen-Cluster“ behält sie bei, obwohl die Werte dort voneinander abhängen. Diese Demo hebt genau sie auf: Die Lage der Jahresmaxima wandert (μ_t = β·t). Vehikel sind ein **ausgedachtes Gumbel-Modell mit Lage-Trend** (alle Gegenproben exakt) und die **M/M/1-Wartezeit am Tor** mit wachsender Last (Vehikel A); die Wochenstruktur des Verweilzeit-Modells (Vehikel B) steht nur als Tabelle. Nachfolger ist die Demo „Welches Verfahren wann?“ (Verfahrenswahl).
 
