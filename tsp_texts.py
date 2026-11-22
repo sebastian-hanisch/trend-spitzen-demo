@@ -56,7 +56,7 @@ CONVENTIONS = """
 | Größe | Bedeutung in dieser Demo |
 |---|---|
 | ξ | Formparameter der GEV: ξ > 0 Fréchet-Typ, ξ = 0 Gumbel, ξ < 0 Weibull-Typ (endlicher Rand; nicht die Weibull-Ausfallverteilung). `scipy.stats.genextreme` hat c = −ξ (nur im Test). Der **Extremwertindex ξ** ist nicht der **Extremalindex θ** aus „Spitzen-Cluster“. |
-| Pegel | Wiederkehrwert: Wert zur Überschreitungswahrscheinlichkeit p im Jahr t, x_t(p) = β·t − ln(−ln(1−p)); „100-Jahres-Pegel“ heißt p = 1/100. Die **Wiederkehrperiode** im Jahr t ist 1/p, der Kehrwert der Überschreitungswahrscheinlichkeit dieses Jahres; sie wäre die mittlere Wartezeit (geometrisch) nur, bliebe p stehen, und ist keine Frist. |
+| Pegel | Wiederkehrwert (englisch Return Level): Wert zur Überschreitungswahrscheinlichkeit p im Jahr t, x_t(p) = β·t − ln(−ln(1−p)); „100-Jahres-Pegel“ heißt p = 1/100. Die **Wiederkehrperiode** im Jahr t ist 1/p, der Kehrwert der Überschreitungswahrscheinlichkeit dieses Jahres; sie wäre die mittlere Wartezeit (geometrisch) nur, bliebe p stehen, und ist keine Frist. |
 | Jahr, Läufe | Ein Jahr ist ein Jahresmaximum (Block). Ein Lauf ist die Wiederholung eines ganzen Experiments (eine Reihe, eine Anpassung); ein Block (Experiment 2) ist eine Nutzungsdauer zu m Jahren. |
 | β, D | Trend β in Einheiten σ je Jahr; Gesamtanstieg D = β·(m−1) in σ über die Reihe von m Jahren. |
 | Heute | Das letzte Jahr der Reihe, t = m−1. „50 Jahre einschließlich des heutigen“ heißt die Jahre 0 bis 49; „50 Jahre ab morgen“ die Jahre 1 bis 50. |

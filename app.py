@@ -316,7 +316,7 @@ with st.expander("📐 Mathematische Formulierung"):
 | $S$ | Summe der Gewichte $e^{\beta t}$ über die Nutzungsdauer |
 | $q$, $x_q$ | Niveau (5 %) und Design Life Level |
 | $T_t$ | Wiederkehrperiode des heutigen Pegels im Jahr $t$ nach heute (keine Frist) |
-| $\lambda$ | Verschiebungsparameter der Trennschärfe des Trendtests |
+| $\lambda$ | Nichtzentralitätsparameter der Trennschärfe des Trendtests |
 | $\xi$ | Formparameter der GEV ($\xi = 0$ Gumbel) |
 | $\rho$, $n$, $\theta$ | Vehikel A: Last, Kunden je Tag, Extremalindex |
 
